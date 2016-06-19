@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, hefeng
+# This file is distributed under the same license as the Documents Demo
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Documents Demo 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-19 15:27+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../source/api/iOS_api.rst:2
+msgid "iOS API"
+msgstr ""
+
+#: ../../source/api/iOS_api.rst:5
+msgid "Authentication"
+msgstr ""
+
+#: ../../source/api/iOS_api.rst:7
+msgid ""
+"RestfulAPI supports only HTTPS. Authentication is performed based on "
+"RestfulAPI Key and respective RestfulAPI Secret. Different from SDK's "
+"Vendor key/Sign Key, this API Key/Secret are used only for Restful API "
+"access. The Restful API Key/ Secret should pass basic HTTP "
+"Authentication. For this, use key as username and secret as password. You"
+" may access the Restful API Key from Dashboard -> Profile -> RestfulAPI"
+msgstr ""
+
+#: ../../source/api/iOS_api.rst:12
+msgid "EndPoint"
+msgstr ""
+
+#: ../../source/api/iOS_api.rst:14
+msgid "All requests should be sent to https://api.agora.io/dev/v1"
+msgstr ""
+
+#: ../../source/api/iOS_api.rst:18
+msgid "Request"
+msgstr ""
+
+#: ../../source/api/iOS_api.rst:20
+msgid ""
+"Parameters must be sent in JSON, with content type: Content-Type: "
+"application/json"
+msgstr ""
+
+#: ../../source/api/iOS_api.rst:23
+msgid "Response"
+msgstr ""
+
+#: ../../source/api/iOS_api.rst:25
+msgid "Response content is JSON format. Response status defined as below:"
+msgstr ""
+
+#: ../../source/api/iOS_api.rst:28
+msgid "Status 200: request handle successfully"
+msgstr ""
+
+#: ../../source/api/iOS_api.rst:29
+msgid "Status 401: unauthorized (incorrect API key/ secret pair)"
+msgstr ""
+
+#: ../../source/api/iOS_api.rst:30
+msgid "Status 400: input is in wrong format"
+msgstr ""
+
+#: ../../source/api/iOS_api.rst:31
+msgid "Status 404: wrong API invoking"
+msgstr ""
+
+#: ../../source/api/iOS_api.rst:32
+msgid "Status 500: internal error of Agora RestfulAPI service"
+msgstr ""
+
+#: ../../source/api/iOS_api.rst:35
+msgid "APIs"
+msgstr ""
+
+#: ../../source/api/iOS_api.rst:38
+msgid "Projects"
+msgstr ""
+
+#: ../../source/api/iOS_api.rst:41
+msgid "1. Get All Projects"
+msgstr ""
+
+#: ../../source/api/iOS_api.rst:44
+msgid "Method::"
+msgstr ""
+
+#: ../../source/api/iOS_api.rst:44
+msgid "Get"
+msgstr ""
+
+#: ../../source/api/iOS_api.rst:46
+msgid "Path::"
+msgstr ""
+
+#: ../../source/api/iOS_api.rst:47
+msgid "/projects/"
+msgstr ""
+
+#: ../../source/api/iOS_api.rst:49
+msgid "Params::"
+msgstr ""
+
+#: ../../source/api/iOS_api.rst:49
+msgid "None"
+msgstr ""
+
+#: ../../source/api/iOS_api.rst:51
+msgid "Response::"
+msgstr ""
+
+#: ../../source/api/iOS_api.rst:68
+msgid "Status::"
+msgstr ""
+
+#: ../../source/api/iOS_api.rst:68
+msgid "1: active"
+msgstr ""
+
+#: ../../source/api/iOS_api.rst:69
+msgid "0: disable"
+msgstr ""
+
