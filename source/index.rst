@@ -3,37 +3,24 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to docs demo's documentation!
+Agora Documentation Center
 =====================================
 
-Contents:
+Agora Communications as a Service (CaaS) provides ensured Quality of Experience for worldwide,
+Internet-based voice and video communications through the Agora Global Network.
+The network optimizes real-time, mobile communications and solves quality of experience challenges for mobile devices,
+such as 3G/4G/Wi-Fi networks that perform erratically and Internet bottlenecks worldwide.
 
-.. _user_guides:
+**Agora CaaS includes the following SDKs:**
 
-.. toctree::
-    :maxdepth: 2
-    :caption: User Guides
+* :doc:`Agora Native SDK for Android <Android_SDK>`
+* :doc:`Agora Native SDK for iOS <iOS_SDK>`
+* :doc:`Agora Native SDK for Windows <Windows_SDK>`
+* :doc:`Agora Native SDK for Mac <Mac_SDK>`
+* :doc:`Agora Native SDK for Web <Webagent_SDK>`
+* :doc:`Agora Whiteboard SDK <Whiteboard_SDK>`
+* :doc:`Agora Broadcasting SDK <Broadcasting_SDK>`
 
-    hello
-    hello2
+**Check the release notes for each release:**
 
-
-.. _api_doc:
-
-.. toctree::
-   :maxdepth: 2
-   :caption: API Documents
-
-   api/terms
-   api/iOS_api
-   api/restful_api
-
-
-
-.. _release_notes:
-
-.. toctree::
-    :maxdepth: 2
-    :caption: Release Notes
-
-    release_notes
+:doc:`Agora SDK Release Notes <release_notes>`

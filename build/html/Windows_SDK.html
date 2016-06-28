@@ -1,0 +1,266 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Agora Native SDK for Android Reference Manual &mdash; Documents Demo 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Documents Demo 1.0 documentation" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Documents Demo
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <!-- Local TOC -->
+                <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Agora Native SDK for Android Reference Manual</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a><ul>
+<li><a class="reference internal" href="#required-development-environments">Required Development Environments</a></li>
+<li><a class="reference internal" href="#required-libraries">Required Libraries</a></li>
+<li><a class="reference internal" href="#required-keys">Required Keys</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#getting-started">Getting Started</a><ul>
+<li><a class="reference internal" href="#obtaining-sdk">Obtaining SDK</a></li>
+<li><a class="reference internal" href="#obtaining-a-vendor-key">Obtaining a Vendor Key</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Documents Demo</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Agora Native SDK for Android Reference Manual</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/Windows_SDK.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="agora-native-sdk-for-android-reference-manual">
+<h1>Agora Native SDK for Android Reference Manual<a class="headerlink" href="#agora-native-sdk-for-android-reference-manual" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>The Agora Web SDK provides open access to the Agora Global Network from any device that supports a standard WebRTC-compliant browser, without requiring downloads or plugins. See the separate documentation and SDK for Agora Web SDK.
+The Agora Native SDK for Android allows your Java code to perform the following operations:</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Session setup</strong>: Join and leave shared Agora conferencing sessions (identified by unique channel names), where there may be many global users conferenced together or simply one other user for one-to-one communication. Your application code should create and manage unique channel names; these usually originate in user, session, and date/time information that your application is already managing.</li>
+<li><strong>Media control</strong>: Enable and disable voice and video (allowing muting) and set various voice and video parameters that help the Agora SDK optimize communications. Many of the SDK operations are automated and do not require developer intervention if these parameter settings are not provided.</li>
+<li><strong>Device control</strong>: Access the microphone or speakerphone, set the volume, select from alternative cameras, and set the video window display.</li>
+<li><strong>Session control</strong>: Receive events when other users join or leave a conferencing session (channel), and understanding who&#8217;s speaking, who&#8217;s muted, and who&#8217;s viewing the session. These events allow the application to decide when to make changes to the delivery of video and audio streams, and other application-specific user and status information.</li>
+<li><strong>Quality management</strong>: Obtain statistics and quality indicators about network conditions, run built-in tests, submit ratings and complaints about sessions and enable different levels of error logging.</li>
+<li><strong>Recording</strong>: Record audio or video and audio in one or multiple channels simultaneously. This function is only applicable to the users who have adopted the Dynamic Key schema.</li>
+<li><strong>Data Encryption</strong>: Encrypt the audio and video packets. You cannot use the recording function when the data encryption function is enabled in a channel.</li>
+</ul>
+</div></blockquote>
+<p>The Agora Native SDK for Android provides two Java abstract classes to deliver these features.</p>
+<ul class="simple">
+<li>The <strong>RtcEngine</strong> class provides all the methods that can be invoked by your application.</li>
+<li>The <strong>IRtcEngineEventHandler</strong> class enables callback event notifications to your application.</li>
+</ul>
+<p>For details, see Agora Native SDK for Android API Reference.</p>
+<div class="section" id="required-development-environments">
+<h3>Required Development Environments<a class="headerlink" href="#required-development-environments" title="Permalink to this headline">¶</a></h3>
+<p>Test</p>
+</div>
+<div class="section" id="required-libraries">
+<h3>Required Libraries<a class="headerlink" href="#required-libraries" title="Permalink to this headline">¶</a></h3>
+<p>Test</p>
+</div>
+<div class="section" id="required-keys">
+<h3>Required Keys<a class="headerlink" href="#required-keys" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="obtaining-sdk">
+<h3>Obtaining SDK<a class="headerlink" href="#obtaining-sdk" title="Permalink to this headline">¶</a></h3>
+<p>Download the latest SDK from <a class="reference external" href="http://cn.agora.io/download">http://cn.agora.io/download</a> or contact <a class="reference external" href="mailto:sales&#37;&#52;&#48;agora&#46;io">sales<span>&#64;</span>agora<span>&#46;</span>io</a>.</p>
+</div>
+<div class="section" id="obtaining-a-vendor-key">
+<h3>Obtaining a Vendor Key<a class="headerlink" href="#obtaining-a-vendor-key" title="Permalink to this headline">¶</a></h3>
+<p>See:doc:&#8217;Agora Native SDK for iOS&lt;/source/iOS_SDK&gt;&#8217;</p>
+<dl class="docutils">
+<dt>term (up to a line of text)</dt>
+<dd><p class="first">Definition of the term, which must be indented</p>
+<p class="last">and can even consist of multiple paragraphs</p>
+</dd>
+<dt>next term</dt>
+<dd>Description.</dd>
+<dt>中文标题</dt>
+<dd><p class="first">代码:</p>
+<div class="last highlight-default"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="p">(</span><span class="n">var</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">;){</span>
+    <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, hefeng.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

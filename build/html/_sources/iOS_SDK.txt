@@ -1,4 +1,4 @@
-Getting started2
+Agora Native SDK for iOS Reference Manual
 ===============
 
 term (up to a line of text)

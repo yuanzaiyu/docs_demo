@@ -1,0 +1,528 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Django documentation &mdash; Documents Demo 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Documents Demo 1.0 documentation" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Documents Demo
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <!-- Local TOC -->
+                <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Django documentation</a><ul>
+<li><a class="reference internal" href="#getting-help">Getting help</a></li>
+<li><a class="reference internal" href="#how-the-documentation-is-organized">How the documentation is organized</a></li>
+<li><a class="reference internal" href="#first-steps">First steps</a></li>
+<li><a class="reference internal" href="#the-model-layer">The model layer</a></li>
+<li><a class="reference internal" href="#the-view-layer">The view layer</a></li>
+<li><a class="reference internal" href="#the-template-layer">The template layer</a></li>
+<li><a class="reference internal" href="#forms">Forms</a></li>
+<li><a class="reference internal" href="#the-development-process">The development process</a></li>
+<li><a class="reference internal" href="#the-admin">The admin</a></li>
+<li><a class="reference internal" href="#security">Security</a></li>
+<li><a class="reference internal" href="#internationalization-and-localization">Internationalization and localization</a></li>
+<li><a class="reference internal" href="#performance-and-optimization">Performance and optimization</a></li>
+<li><a class="reference internal" href="#python-compatibility">Python compatibility</a></li>
+<li><a class="reference internal" href="#geographic-framework">Geographic framework</a></li>
+<li><a class="reference internal" href="#common-web-application-tools">Common Web application tools</a></li>
+<li><a class="reference internal" href="#other-core-functionalities">Other core functionalities</a></li>
+<li><a class="reference internal" href="#the-django-open-source-project">The Django open-source project</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Documents Demo</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Django documentation</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/sourcecodetest.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="django-documentation">
+<h1>Django documentation<a class="headerlink" href="#django-documentation" title="Permalink to this headline">¶</a></h1>
+<p class="rubric">Everything you need to know about Django.</p>
+<div class="section" id="getting-help">
+<h2>Getting help<a class="headerlink" href="#getting-help" title="Permalink to this headline">¶</a></h2>
+<p>Having trouble? We&#8217;d like to help!</p>
+<ul class="simple">
+<li>Try the <span class="xref doc">FAQ</span> &#8211; it&#8217;s got answers to many common questions.</li>
+<li>Looking for specific information? Try the <a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a>, <a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a> or
+the <span class="xref doc">detailed table of contents</span>.</li>
+<li>Search for information in the archives of the <a href="#id1"><span class="problematic" id="id2">|django-users|</span></a> mailing list, or
+<a class="reference external" href="https://groups.google.com/d/forum/django-users">post a question</a>.</li>
+<li>Ask a question in the <a class="reference external" href="irc://irc.freenode.net/django">#django IRC channel</a>, or search the <a class="reference external" href="http://django-irc-logs.com/">IRC logs</a> to see
+if it&#8217;s been asked before.</li>
+<li>Report bugs with Django in our <a class="reference external" href="https://code.djangoproject.com/">ticket tracker</a>.</li>
+</ul>
+</div>
+<div class="section" id="how-the-documentation-is-organized">
+<h2>How the documentation is organized<a class="headerlink" href="#how-the-documentation-is-organized" title="Permalink to this headline">¶</a></h2>
+<p>Django has a lot of documentation. A high-level overview of how it&#8217;s organized
+will help you know where to look for certain things:</p>
+<ul class="simple">
+<li><span class="xref doc">Tutorials</span> take you by the hand through a series of
+steps to create a Web application. Start here if you&#8217;re new to Django or Web
+application development. Also look at the &#8220;<a class="reference internal" href="#index-first-steps"><span class="std std-ref">First steps</span></a>&#8221; below.</li>
+<li><span class="xref doc">Topic guides</span> discuss key topics and concepts at a
+fairly high level and provide useful background information and explanation.</li>
+<li><span class="xref doc">Reference guides</span> contain technical reference for APIs and
+other aspects of Django&#8217;s machinery. They describe how it works and how to
+use it but assume that you have a basic understanding of key concepts.</li>
+<li><span class="xref doc">How-to guides</span> are recipes. They guide you through the
+steps involved in addressing key problems and use-cases. They are more
+advanced than tutorials and assume some knowledge of how Django works.</li>
+</ul>
+</div>
+<div class="section" id="first-steps">
+<span id="index-first-steps"></span><h2>First steps<a class="headerlink" href="#first-steps" title="Permalink to this headline">¶</a></h2>
+<p>Are you new to Django or to programming? This is the place to start!</p>
+<ul class="simple">
+<li><strong>From scratch:</strong>
+<span class="xref doc">Overview</span> |
+<span class="xref doc">Installation</span></li>
+<li><strong>Tutorial:</strong>
+<span class="xref doc">Part 1: Requests and responses</span> |
+<span class="xref doc">Part 2: Models and the admin site</span> |
+<span class="xref doc">Part 3: Views and templates</span> |
+<span class="xref doc">Part 4: Forms and generic views</span> |
+<span class="xref doc">Part 5: Testing</span> |
+<span class="xref doc">Part 6: Static files</span> |
+<span class="xref doc">Part 7: Customizing the admin site</span></li>
+<li><strong>Advanced Tutorials:</strong>
+<span class="xref doc">How to write reusable apps</span> |
+<span class="xref doc">Writing your first patch for Django</span></li>
+</ul>
+</div>
+<div class="section" id="the-model-layer">
+<h2>The model layer<a class="headerlink" href="#the-model-layer" title="Permalink to this headline">¶</a></h2>
+<p>Django provides an abstraction layer (the &#8220;models&#8221;) for structuring and
+manipulating the data of your Web application. Learn more about it below:</p>
+<ul class="simple">
+<li><strong>Models:</strong>
+<span class="xref doc">Introduction to models</span> |
+<span class="xref doc">Field types</span> |
+<span class="xref doc">Indexes</span> |
+<span class="xref doc">Meta options</span> |
+<span class="xref doc">Model class</span></li>
+<li><strong>QuerySets:</strong>
+<span class="xref doc">Executing queries</span> |
+<span class="xref doc">QuerySet method reference</span> |
+<span class="xref doc">Lookup expressions</span></li>
+<li><strong>Model instances:</strong>
+<span class="xref doc">Instance methods</span> |
+<span class="xref doc">Accessing related objects</span></li>
+<li><strong>Migrations:</strong>
+<span class="xref doc">Introduction to Migrations</span> |
+<span class="xref doc">Operations reference</span> |
+<span class="xref doc">SchemaEditor</span> |
+<span class="xref doc">Writing migrations</span></li>
+<li><strong>Advanced:</strong>
+<span class="xref doc">Managers</span> |
+<span class="xref doc">Raw SQL</span> |
+<span class="xref doc">Transactions</span> |
+<span class="xref doc">Aggregation</span> |
+<span class="xref doc">Search</span> |
+<span class="xref doc">Custom fields</span> |
+<span class="xref doc">Multiple databases</span> |
+<span class="xref doc">Custom lookups</span> |
+<span class="xref doc">Query Expressions</span> |
+<span class="xref doc">Conditional Expressions</span> |
+<span class="xref doc">Database Functions</span></li>
+<li><strong>Other:</strong>
+<span class="xref doc">Supported databases</span> |
+<span class="xref doc">Legacy databases</span> |
+<span class="xref doc">Providing initial data</span> |
+<span class="xref doc">Optimize database access</span> |
+<span class="xref doc">PostgreSQL specific features</span></li>
+</ul>
+</div>
+<div class="section" id="the-view-layer">
+<h2>The view layer<a class="headerlink" href="#the-view-layer" title="Permalink to this headline">¶</a></h2>
+<p>Django has the concept of &#8220;views&#8221; to encapsulate the logic responsible for
+processing a user&#8217;s request and for returning the response. Find all you need
+to know about views via the links below:</p>
+<ul class="simple">
+<li><strong>The basics:</strong>
+<span class="xref doc">URLconfs</span> |
+<span class="xref doc">View functions</span> |
+<span class="xref doc">Shortcuts</span> |
+<span class="xref doc">Decorators</span></li>
+<li><strong>Reference:</strong>
+<span class="xref doc">Built-in Views</span> |
+<span class="xref doc">Request/response objects</span> |
+<span class="xref doc">TemplateResponse objects</span></li>
+<li><strong>File uploads:</strong>
+<span class="xref doc">Overview</span> |
+<span class="xref doc">File objects</span> |
+<span class="xref doc">Storage API</span> |
+<span class="xref doc">Managing files</span> |
+<span class="xref doc">Custom storage</span></li>
+<li><strong>Class-based views:</strong>
+<span class="xref doc">Overview</span> |
+<span class="xref doc">Built-in display views</span> |
+<span class="xref doc">Built-in editing views</span> |
+<span class="xref doc">Using mixins</span> |
+<span class="xref doc">API reference</span> |
+<span class="xref doc">Flattened index</span></li>
+<li><strong>Advanced:</strong>
+<span class="xref doc">Generating CSV</span> |
+<span class="xref doc">Generating PDF</span></li>
+<li><strong>Middleware:</strong>
+<span class="xref doc">Overview</span> |
+<span class="xref doc">Built-in middleware classes</span></li>
+</ul>
+</div>
+<div class="section" id="the-template-layer">
+<h2>The template layer<a class="headerlink" href="#the-template-layer" title="Permalink to this headline">¶</a></h2>
+<p>The template layer provides a designer-friendly syntax for rendering the
+information to be presented to the user. Learn how this syntax can be used by
+designers and how it can be extended by programmers:</p>
+<ul class="simple">
+<li><strong>The basics:</strong>
+<span class="xref doc">Overview</span></li>
+<li><strong>For designers:</strong>
+<span class="xref doc">Language overview</span> |
+<span class="xref doc">Built-in tags and filters</span> |
+<span class="xref doc">Humanization</span></li>
+<li><strong>For programmers:</strong>
+<span class="xref doc">Template API</span> |
+<span class="xref doc">Custom tags and filters</span></li>
+</ul>
+</div>
+<div class="section" id="forms">
+<h2>Forms<a class="headerlink" href="#forms" title="Permalink to this headline">¶</a></h2>
+<p>Django provides a rich framework to facilitate the creation of forms and the
+manipulation of form data.</p>
+<ul class="simple">
+<li><strong>The basics:</strong>
+<span class="xref doc">Overview</span> |
+<span class="xref doc">Form API</span> |
+<span class="xref doc">Built-in fields</span> |
+<span class="xref doc">Built-in widgets</span></li>
+<li><strong>Advanced:</strong>
+<span class="xref doc">Forms for models</span> |
+<span class="xref doc">Integrating media</span> |
+<span class="xref doc">Formsets</span> |
+<span class="xref doc">Customizing validation</span></li>
+</ul>
+</div>
+<div class="section" id="the-development-process">
+<h2>The development process<a class="headerlink" href="#the-development-process" title="Permalink to this headline">¶</a></h2>
+<p>Learn about the various components and tools to help you in the development and
+testing of Django applications:</p>
+<ul class="simple">
+<li><strong>Settings:</strong>
+<span class="xref doc">Overview</span> |
+<span class="xref doc">Full list of settings</span></li>
+<li><strong>Applications:</strong>
+<span class="xref doc">Overview</span></li>
+<li><strong>Exceptions:</strong>
+<span class="xref doc">Overview</span></li>
+<li><strong>django-admin and manage.py:</strong>
+<span class="xref doc">Overview</span> |
+<span class="xref doc">Adding custom commands</span></li>
+<li><strong>Testing:</strong>
+<span class="xref doc">Introduction</span> |
+<span class="xref doc">Writing and running tests</span> |
+<span class="xref doc">Included testing tools</span> |
+<span class="xref doc">Advanced topics</span></li>
+<li><strong>Deployment:</strong>
+<span class="xref doc">Overview</span> |
+<span class="xref doc">WSGI servers</span> |
+<span class="xref doc">Deploying static files</span> |
+<span class="xref doc">Tracking code errors by email</span></li>
+</ul>
+</div>
+<div class="section" id="the-admin">
+<h2>The admin<a class="headerlink" href="#the-admin" title="Permalink to this headline">¶</a></h2>
+<p>Find all you need to know about the automated admin interface, one of Django&#8217;s
+most popular features:</p>
+<ul class="simple">
+<li><span class="xref doc">Admin site</span></li>
+<li><span class="xref doc">Admin actions</span></li>
+<li><span class="xref doc">Admin documentation generator</span></li>
+</ul>
+</div>
+<div class="section" id="security">
+<h2>Security<a class="headerlink" href="#security" title="Permalink to this headline">¶</a></h2>
+<p>Security is a topic of paramount importance in the development of Web
+applications and Django provides multiple protection tools and mechanisms:</p>
+<ul class="simple">
+<li><span class="xref doc">Security overview</span></li>
+<li><span class="xref doc">Disclosed security issues in Django</span></li>
+<li><span class="xref doc">Clickjacking protection</span></li>
+<li><span class="xref doc">Cross Site Request Forgery protection</span></li>
+<li><span class="xref doc">Cryptographic signing</span></li>
+<li><span class="xref std std-ref">Security Middleware</span></li>
+</ul>
+</div>
+<div class="section" id="internationalization-and-localization">
+<h2>Internationalization and localization<a class="headerlink" href="#internationalization-and-localization" title="Permalink to this headline">¶</a></h2>
+<p>Django offers a robust internationalization and localization framework to
+assist you in the development of applications for multiple languages and world
+regions:</p>
+<ul class="simple">
+<li><span class="xref doc">Overview</span> |
+<span class="xref doc">Internationalization</span> |
+<span class="xref std std-ref">Localization</span> |
+<span class="xref doc">Localized Web UI formatting and form input</span></li>
+<li><span class="xref doc">Time zones</span></li>
+</ul>
+</div>
+<div class="section" id="performance-and-optimization">
+<h2>Performance and optimization<a class="headerlink" href="#performance-and-optimization" title="Permalink to this headline">¶</a></h2>
+<p>There are a variety of techniques and tools that can help get your code running
+more efficiently - faster, and using fewer system resources.</p>
+<ul class="simple">
+<li><span class="xref doc">Performance and optimization overview</span></li>
+</ul>
+</div>
+<div class="section" id="python-compatibility">
+<h2>Python compatibility<a class="headerlink" href="#python-compatibility" title="Permalink to this headline">¶</a></h2>
+<p>Django aims to be compatible with multiple different flavors and versions of
+Python:</p>
+<ul class="simple">
+<li><span class="xref doc">Jython support</span></li>
+<li><span class="xref doc">Python 3 compatibility</span></li>
+</ul>
+</div>
+<div class="section" id="geographic-framework">
+<h2>Geographic framework<a class="headerlink" href="#geographic-framework" title="Permalink to this headline">¶</a></h2>
+<p><span class="xref doc">GeoDjango</span> intends to be a world-class geographic
+Web framework. Its goal is to make it as easy as possible to build GIS Web
+applications and harness the power of spatially enabled data.</p>
+</div>
+<div class="section" id="common-web-application-tools">
+<h2>Common Web application tools<a class="headerlink" href="#common-web-application-tools" title="Permalink to this headline">¶</a></h2>
+<p>Django offers multiple tools commonly needed in the development of Web
+applications:</p>
+<ul class="simple">
+<li><strong>Authentication:</strong>
+<span class="xref doc">Overview</span> |
+<span class="xref doc">Using the authentication system</span> |
+<span class="xref doc">Password management</span> |
+<span class="xref doc">Customizing authentication</span> |
+<span class="xref doc">API Reference</span></li>
+<li><span class="xref doc">Caching</span></li>
+<li><span class="xref doc">Logging</span></li>
+<li><span class="xref doc">Sending emails</span></li>
+<li><span class="xref doc">Syndication feeds (RSS/Atom)</span></li>
+<li><span class="xref doc">Pagination</span></li>
+<li><span class="xref doc">Messages framework</span></li>
+<li><span class="xref doc">Serialization</span></li>
+<li><span class="xref doc">Sessions</span></li>
+<li><span class="xref doc">Sitemaps</span></li>
+<li><span class="xref doc">Static files management</span></li>
+<li><span class="xref doc">Data validation</span></li>
+</ul>
+</div>
+<div class="section" id="other-core-functionalities">
+<h2>Other core functionalities<a class="headerlink" href="#other-core-functionalities" title="Permalink to this headline">¶</a></h2>
+<p>Learn about some other core functionalities of the Django framework:</p>
+<ul class="simple">
+<li><span class="xref doc">Conditional content processing</span></li>
+<li><span class="xref doc">Content types and generic relations</span></li>
+<li><span class="xref doc">Flatpages</span></li>
+<li><span class="xref doc">Redirects</span></li>
+<li><span class="xref doc">Signals</span></li>
+<li><span class="xref doc">System check framework</span></li>
+<li><span class="xref doc">The sites framework</span></li>
+<li><span class="xref doc">Unicode in Django</span></li>
+</ul>
+</div>
+<div class="section" id="the-django-open-source-project">
+<h2>The Django open-source project<a class="headerlink" href="#the-django-open-source-project" title="Permalink to this headline">¶</a></h2>
+<p>Learn about the development process for the Django project itself and about how
+you can contribute:</p>
+<ul class="simple">
+<li><strong>Community:</strong>
+<span class="xref doc">How to get involved</span> |
+<span class="xref doc">The release process</span> |
+<span class="xref doc">Team organization</span> |
+<span class="xref doc">Meet the team</span> |
+<span class="xref doc">Current roles</span> |
+<span class="xref doc">The Django source code repository</span> |
+<span class="xref doc">Security policies</span> |
+<span class="xref doc">Mailing lists</span></li>
+<li><strong>Design philosophies:</strong>
+<span class="xref doc">Overview</span></li>
+<li><strong>Documentation:</strong>
+<span class="xref doc">About this documentation</span></li>
+<li><strong>Third-party distributions:</strong>
+<span class="xref doc">Overview</span></li>
+<li><strong>Django over time:</strong>
+<span class="xref doc">API stability</span> |
+<span class="xref doc">Release notes and upgrading instructions</span> |
+<span class="xref doc">Deprecation Timeline</span></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, hefeng.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
