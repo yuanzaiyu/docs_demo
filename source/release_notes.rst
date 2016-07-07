@@ -23,9 +23,8 @@ H264 supports.
 2016 - 03 - 01
 This is for tina to test.
 What can I do for you?
-
-Lonon bridge is falling down.
-See you, see me, see you forever, down the road.
+Tina is very cute.
+See you, me, see you forever, down the road.
 
 Can anybody tell me what happened?
 
